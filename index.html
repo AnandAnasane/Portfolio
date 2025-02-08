@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anand's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/3f52465ee9.js" crossorigin="anonymous"></script>
+    <style>
+        #header {
+            width: 100%;
+            height: 100vh;
+            background-image: url("./bg-image.jpg");
+            background-size: cover;
+            background-position: center center;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+              
+                <ul>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <h1>Hi, My name is <span class="purple">Anand</span></h1>
+                <div>and I am a passionate</div>
+                <span id="element"></span>
+                <div class="git-resume-button">
+                    <button class="btn-download"><a href="./anand_anasane_latest_10_jan.pdf" target="_blank" rel="noopener noreferrer">Download Resume</a></button>
+                    <button class="btn-download"><a href="https://github.com/AnandAnasane" target="_blank">Visit Github</a></button>
+                </div>
+                <div class="header-social-icons">
+                    <a href="https://github.com/AnandAnasane"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.twitter.com/"><i class="fa-brands fa-twitter-square"></i></a>
+                    <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/aanand-anasane/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://www.facebook.com/"><i class="fa-brands fa-square-facebook"></i></a>
+                    <a href="#"><i class="fa-regular fa-envelope"></i></a>
+                </div>
+            </div>
+        </div>
+        <!-- ------------------------skill-social-icons----------------- -->
+        <div id="skils-block">
+            <h3><span id="skill-year">1</span> YEAR OF EXPERIENCE</h3>
+            <h3><span id="skill-year">6</span> PROJECTS COMPLETED</h3>
+            <div class="skill-social-icons">
+                <a href="#"><i class="fa-brands fa-square-js"></i></a>
+                <a href="#"><i class="fa-brands fa-html5"></i></a>
+                <a href="#"><i class="fa-brands fa-css3-alt"></i></a>
+                <a href="#"><i class="fa-brands fa-react"></i></a>
+                <a href="#"><i class="fa-brands fa-node-js"></i></a>
+                <a href="#"><i class="fa-solid fa-database"></i></a>
+                <a href="#"><i class="fa-brands fa-git"></i></a>
+                <a href="#"><i class="fa-brands fa-bootstrap"></i></a>
+                <a href="#"><i class="fa-brands fa-angular"></i></i></a>
+            </div>
+        </div>
+        <!-- ----------------------------skills-social-icons-end------------------------ -->
+    </div>
+    <!-- -------------about------------ -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="./anand_png.png" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>With 1 year of experience in the industry, I have honed my skills in HTML, CSS, JavaScript, Bootstrap, and Angular, keeping pace with the latest trends and frameworks to deliver cutting-edge solutions. Whether it's building responsive web applications or developing dynamic single-page applications (SPAs) with Angular, I'm committed to delivering high-quality results that exceed expectations.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experince')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Educations</p>
+                    </div>
+                    <!-- --------------Skills--------------- -->
+                    <div class="tab-contents active-tab" id="skills">
+                        <div class="icon-grid">
+                            <div class="icon-row">
+                                <img src="./javascript.webp" alt="Icon 1">
+                                <img src="./html.webp" alt="Icon 2">
+                                <img src="./css.webp" alt="Icon 3">
+                                <img src="./reactjs.webp" alt="Icon 4">
+                                <img src="./node.webp" alt="Icon 5">
+                                
+                            </div>
+                            <div class="icon-row">
+                                
+                                <img src="./file_type_vscode.svg" alt="Icon 8">
+                                <img src="./figma.webp" alt="Icon 9">
+                                <img src="./angular_gradient.png" alt="Icon 9">
+                                
+                                <img src="./git.webp" alt="Icon 9">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ----------------skills end-------------- -->
+                    <!-- -------------Experience------------ -->
+                    <div class="tab-contents" id="experince">
+                        <ul>
+                            <li><span>April 2024 - Current </span> Frontend Develoepr Intern</li>
+                        </ul>
+                    </div>
+                    <!-- ----------------Experience end------------------ -->
+                    <!-- --------------------Education---------------- -->
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2015</span> B.S.C (Bachelor of Computer Science)</li>
+                            <li><span>20011</span> H.S.S.C</li>
+                            <li><span>2009</span> S.S.C</li>
+                        </ul>
+                    </div>
+                    <!-- --------------------Education End------------------>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ------------------services---------------------- -->
+    <div id="services">
+        <div class="container">
+            <h1 class="myservices-sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p  style="font-size: 14px;">A bad website is like a flat tire, it won’t take you anywhere.
+                        In today’s digital world, your website is your handshake with the world. We'll designs websites
+                        that not only captivate but convert, driving real results for your business.</p><br>
+                    <p>Let’s build your online growth engine.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop-simple"></i>
+                    <h2>Web Development</h2>
+                    <p  style="font-size: 14px;">Web development refers to the design, development, and maintenance of websites. This includes
+                        aspects such as web design, web publishing, web design, and database management. It is the
+                        development of applications that run on the Internet, that is on networks.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-pen-to-square"></i>
+                    <h2>Frontend Technology</h2>
+                    <p style="font-size: 14px;">Specialize in crafting responsive, user-friendly, and high-performance web applications using modern frontend technologies. With expertise in Angular, HTML, CSS, JavaScript, and Bootstrap, I build seamless UI/UX experiences that are visually appealing and highly interactive. My services include web design, development, optimization, and performance enhancement, ensuring fast and engaging digital experiences. </p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <!-- ------------------portfolio----------------------- -->
+    <div id="projects">
+        <div class="container">
+            <h1 class="project-sub-title">Projects</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="./work1.jpg">
+                    <div class="layer">
+                        <h3>Gym Website</h3>
+                        <p> Digital platform designed to showcase fitness services, training programs, and membership options....</p>
+                        <a href="https://anandanasane.github.io/Project-Gym/"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="./work2.jpg">
+                    <div class="layer">
+                        <h3>Restaurent Website</h3>
+                        <p>A restaurant website serves as a digital presence for a restaurant, allowing customers to explore menus, make reservations, and learn about services....</p>
+                        <a href="https://anandanasane.github.io/Urban-Bites/"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="./work3.jpg">
+                    <div class="layer">
+                        <h3>Student Portal</h3>
+                        <p>A Student Portal Website is a web-based platform designed to manage attendence of  students...</p>
+                        <a href="https://anandanasane.github.io/Angular-CRUD/"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="https://github.com/AnandAnasane" class="btn">See more</a>
+        </div>
+    </div>
+    <!-- -------------------------contact-------------------- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="contact-sub-title">Contact Me</h1>
+                    <div class="skill-social-icons">
+                        <a href="#"><i class="fa-solid fa-paper-plane"></i></a> aanand08a@gmail.com <br>
+                        <a href="#"><i class="fa-solid fa-square-phone"></i></a> +91 8459 925 058
+                    </div>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.twitter.com/"><i class="fa-brands fa-twitter-square"></i></a>
+                        <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/aanand-anasane/"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="./anand_anasane_latest_10_jan.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="John@xyz.com" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message" required></textarea>
+                        <button type="submit" class="btn btn2">Send</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>2024 Copyright <span>&copy;</span> Anand's Portfolio.</p>
+        </div>
+    </div>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+
+    <form name="submit-to-google-sheet">
+
+    </form>
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzl04umpHJrMpjfxnRyXzO_gMAoIJp2FaEc4oH_r-2aT06rXLpLX-63-yQyfAXcR3-Y/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+    
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { 
+                method: 'POST', 
+                body: new FormData(form) 
+            })
+            .then(response => response.text()) // Convert response to text
+            .then(data => {
+                msg.innerHTML = "Message sent successfully";
+                setTimeout(() => { msg.innerHTML = "" }, 5000);
+                form.reset();
+            })
+            .catch(error => {
+                console.error('Error!', error.message);
+                msg.innerHTML = "Failed to send message!";
+            })
+        })
+    </script>
+    
+
+    <!-- <script>
+        const scriptURL = 'https://script.google.com/home/projects/1dYxLBhHjqfHWOv_E6JuGoUtxgCwseihFnCF_YUGFBz_YF5Dtsfv7MVSx/edit'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = "Message sent successfully"
+                    setTimeout(function () {
+                        msg.innerHTML = ""
+                    }, 5000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script> -->
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web Developer', 'Frontend Developer', 'MEAN Stack Developer'],
+            typeSpeed: 50,
+        });
+    </script>
+
+</body>
+
+</html>
