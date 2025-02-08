@@ -210,9 +210,9 @@
                 </div>
                 <div class="contact-right">
                     <form name="submit-to-google-sheet">
-                        <input type="text" name="Name" placeholder="Your Name" required>
-                        <input type="email" name="Email" placeholder="John@xyz.com" required>
-                        <textarea name="Message" rows="6" placeholder="Your Message" required></textarea>
+                        <input type="text" name="name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="John@xyz.com" required>
+                        <textarea name="message" rows="6" placeholder="Your Message" required></textarea>
                         <button type="submit" class="btn btn2">Send</button>
                     </form>
                     <span id="msg"></span>
@@ -244,49 +244,35 @@
 
     </form>
 
-    <script>
-        const scriptURL = 'https://script.google.com/macros/s/AKfycbzl04umpHJrMpjfxnRyXzO_gMAoIJp2FaEc4oH_r-2aT06rXLpLX-63-yQyfAXcR3-Y/exec'
-        const form = document.forms['submit-to-google-sheet']
-        const msg = document.getElementById("msg")
+    
+     <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbyOU11hYpe3clwvPBMHmoEqOheikdQYnECJNI6nN7wDCgCnvpx47eh7GDe6ssJPPtTr/exec'; // Replace with your web app URL
+        const form = document.forms['submit-to-google-sheet'];
+        const msg = document.getElementById("msg");
     
         form.addEventListener('submit', e => {
-            e.preventDefault()
+            e.preventDefault();
             fetch(scriptURL, { 
                 method: 'POST', 
-                body: new FormData(form) 
+                body: new FormData(form)
             })
-            .then(response => response.text()) // Convert response to text
+            .then(response => response.text()) 
             .then(data => {
                 msg.innerHTML = "Message sent successfully";
                 setTimeout(() => { msg.innerHTML = "" }, 5000);
                 form.reset();
             })
             .catch(error => {
-                console.error('Error!', error.message);
+                console.error('Error!', error);
                 msg.innerHTML = "Failed to send message!";
-            })
-        })
+            });
+        });
     </script>
     
 
-    <!-- <script>
-        const scriptURL = 'https://script.google.com/home/projects/1dYxLBhHjqfHWOv_E6JuGoUtxgCwseihFnCF_YUGFBz_YF5Dtsfv7MVSx/edit'
-        const form = document.forms['submit-to-google-sheet']
-        const msg = document.getElementById("msg")
 
-        form.addEventListener('submit', e => {
-            e.preventDefault()
-            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
-                .then(response => {
-                    msg.innerHTML = "Message sent successfully"
-                    setTimeout(function () {
-                        msg.innerHTML = ""
-                    }, 5000)
-                    form.reset()
-                })
-                .catch(error => console.error('Error!', error.message))
-        })
-    </script> -->
+    
+
 
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
 
